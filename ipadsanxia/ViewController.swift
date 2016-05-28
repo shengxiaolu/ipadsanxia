@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func userClick(sender: UIButton) {
-        print("😄")
+        print("😄helloworld")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
