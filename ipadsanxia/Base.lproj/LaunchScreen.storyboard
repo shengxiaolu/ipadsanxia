@@ -1,27 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="XlB-oa-Qfh">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="Rf0-SK-RU9" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="ti4-b4-Q7z"/>
+                        <viewControllerLayoutGuide type="bottom" id="pAb-jK-KBH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="center" id="b3d-KT-QQc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9F-Ta-Hmr">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imag1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XkV-Gd-l00">
+                                        <rect key="frame" x="0.0" y="0.0" width="788" height="1374"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJu-KX-eib">
+                                        <rect key="frame" x="299" y="742" width="191" height="30"/>
+                                        <state key="normal" title="进入系统" backgroundImage="txtbackground.png">
+                                            <color key="titleColor" red="0.70895369760000004" green="0.70895369760000004" blue="0.70895369760000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XkV-Gd-l00" secondAttribute="bottom" constant="-190" id="9du-tg-xA0"/>
+                                    <constraint firstItem="eJu-KX-eib" firstAttribute="centerX" secondItem="y9F-Ta-Hmr" secondAttribute="centerX" id="JxR-1s-hPi"/>
+                                    <constraint firstItem="XkV-Gd-l00" firstAttribute="leading" secondItem="y9F-Ta-Hmr" secondAttribute="leading" id="KFH-KK-q21"/>
+                                    <constraint firstItem="XkV-Gd-l00" firstAttribute="centerX" secondItem="y9F-Ta-Hmr" secondAttribute="centerX" id="PwU-jB-9dv"/>
+                                    <constraint firstItem="XkV-Gd-l00" firstAttribute="top" secondItem="y9F-Ta-Hmr" secondAttribute="top" id="WyR-gs-G9V"/>
+                                    <constraint firstAttribute="bottom" secondItem="eJu-KX-eib" secondAttribute="bottom" constant="100" id="Xj5-tw-RGz"/>
+                                    <constraint firstItem="XkV-Gd-l00" firstAttribute="centerY" secondItem="y9F-Ta-Hmr" secondAttribute="centerY" id="c1v-yy-qpw"/>
+                                    <constraint firstAttribute="trailing" secondItem="XkV-Gd-l00" secondAttribute="trailing" constant="-20" id="k5f-EH-Ygq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="y9F-Ta-Hmr" secondAttribute="trailing" id="664-nM-fFU"/>
+                            <constraint firstItem="y9F-Ta-Hmr" firstAttribute="leading" secondItem="b3d-KT-QQc" secondAttribute="leadingMargin" constant="-20" id="aCx-TO-8zP"/>
+                            <constraint firstItem="pAb-jK-KBH" firstAttribute="top" secondItem="y9F-Ta-Hmr" secondAttribute="bottom" constant="185" id="ig2-sk-KsG"/>
+                            <constraint firstItem="y9F-Ta-Hmr" firstAttribute="top" secondItem="ti4-b4-Q7z" secondAttribute="bottom" id="uf0-hR-vwY"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EO6-v7-VwD"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJS-at-5j5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="101" y="427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imag1.png" width="768" height="1024"/>
+        <image name="txtbackground.png" width="125" height="32"/>
+    </resources>
 </document>
